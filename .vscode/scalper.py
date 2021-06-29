@@ -6,7 +6,7 @@ chromeOption = webdriver.ChromeOptions()
 chromeOption.add_argument('--incognito')
 browser = webdriver.Chrome(r'C:\Users\danie\Documents\chromedriver.exe', options=chromeOption)
 
-browser.get("https://www.bestbuy.com/site/happiness-is-a-warm-blanket-charlie-brown-dvd-2011/2095286.p?skuId=2095286")
+browser.get("https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149")
 firstName = "Daniel"
 lastName = "Zhou"
 address = "11005 Hiskey Lane"
@@ -19,8 +19,6 @@ cardNumber = "4242 4242 4242 4242"
 cardSecurity = "424"
 expirationMonth = "03"
 expirationYear = "2025"
-
-
 
 buyButton = False
 goToCartButton = False
@@ -36,7 +34,7 @@ while not buyButton:
     try:
         addButton = browser.find_element_by_class_name("btn-disabled")
         print("No Stock")
-        time.sleep(1)
+        time.sleep(2)
         browser.refresh()
     except:
         addButton = browser.find_element_by_class_name("btn-primary")

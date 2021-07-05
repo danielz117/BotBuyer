@@ -7,6 +7,7 @@ chromeOption.add_argument('--incognito')
 browser = webdriver.Chrome(r'C:\Users\danie\Documents\chromedriver.exe', options=chromeOption)
 
 browser.get("https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149")
+#browser.get("https://www.bestbuy.com/site/eternal-sunshine-of-the-spotless-mind-blu-ray-2004/1559501.p?skuId=1559501")
 firstName = "Daniel"
 lastName = "Zhou"
 address = "11005 Hiskey Lane"
